@@ -19,7 +19,6 @@ const AddVehicles = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can handle form submission, for now, just log the form data
     console.log(formData);
     axios.post('http://localhost:3000/api/addvehicles', formData)
       .then(response => {
@@ -28,7 +27,6 @@ const AddVehicles = () => {
       .catch(error => {
         console.error('Error:', error);
       });
-    // Clear form fields after submission
     setFormData({
       vin:'',
       color: '',
@@ -103,7 +101,7 @@ const AddVehicles = () => {
           onChange={handleChange}
         />
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit">Add Vehicles</button>
     </form>
 
   )

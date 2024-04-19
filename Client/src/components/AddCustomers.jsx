@@ -10,7 +10,7 @@ const AddCustomers = () => {
     phone: '',
     address: '',
     gender: '',
-    customer_id: "C00098",
+    customer_id: "",
   });
 
   const handleChange = (e) => {
